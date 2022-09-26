@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="673.0" prefWidth="761.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.controllers.MuroController">
+   <children>
+      <ImageView fitHeight="153.0" fitWidth="134.0" layoutX="557.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../resources/kisspng-computer-icons-patriotic-online-marketplace-5b2f6e0c0276c5.8216170515298350200101.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="-6.0" prefHeight="78.0" prefWidth="768.0" style="-fx-background-color: linear-gradient(to right top, #09913f, #09915d, #099174, #099186, #098191);" />
+      <JFXComboBox fx:id="comboVendedores" layoutX="572.0" layoutY="84.0" prefHeight="25.0" prefWidth="134.0" promptText="Vendedor en Linea" styleClass="combo-box" />
+      <HBox alignment="CENTER" layoutX="54.0" layoutY="132.0" prefHeight="500.0" prefWidth="460.0">
+         <children>
+            <ScrollPane fx:id="scrollPane" maxHeight="-Infinity" prefHeight="541.0" prefWidth="460.0" style="-fx-background-color: transparent;">
+               <content>
+                  <GridPane fx:id="gridPane" prefHeight="0.0" prefWidth="0.0">
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                     </rowConstraints>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </HBox>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="540.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../resources/Icon-user.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnRenovar" buttonType="RAISED" layoutX="713.0" layoutY="82.0" minHeight="-Infinity" minWidth="-Infinity" onAction="#renovar" prefHeight="29.0" prefWidth="37.0" style="-fx-background-color: E1E1E1;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="29.0" fitWidth="30.0" layoutX="709.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../resources/session-join-pngrepo-com.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="64.0" layoutY="97.0" prefHeight="25.0" prefWidth="106.0" style="-fx-background-color: linear-gradient(to right top, #164a4f, #10484d, #0a454a, #044045, #01393d); -fx-background-radius: 30;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Text fill="WHITE" layoutX="10.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Productos">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="579.0" layoutY="347.0" prefHeight="25.0" prefWidth="106.0" style="-fx-background-color: linear-gradient(to right top, #164a4f, #10484d, #0a454a, #044045, #01393d); -fx-background-radius: 30;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Text fill="WHITE" layoutX="17.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuarios">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <HBox layoutX="522.0" layoutY="382.0" prefHeight="129.0" prefWidth="235.0">
+         <children>
+            <ScrollPane fx:id="scrollSugerencias" prefHeight="128.0" prefWidth="235.0" style="-fx-background-color: transparent;">
+               <content>
+                  <GridPane fx:id="gridSugerencias" prefHeight="0.0" prefWidth="0.0">
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                     </rowConstraints>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </HBox>
+      <Pane layoutX="573.0" layoutY="116.0" prefHeight="32.0" prefWidth="129.0" style="-fx-background-color: linear-gradient(to right top, #6c7682, #485e78, #36506e, #264569, #193c63); -fx-background-radius: 30;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fx:id="imagenLike" fitHeight="32.0" fitWidth="37.0" layoutX="28.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../resources/facebook-like.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="numLikes" layoutX="12.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="25.553386688232422">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="imagenMessenger" fitHeight="29.0" fitWidth="29.0" layoutX="80.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../resources/facebook-messenger--v1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="577.0" layoutY="520.0" prefHeight="26.0" prefWidth="109.0" style="-fx-background-color: linear-gradient(to right top, #164a4f, #10484d, #0a454a, #044045, #01393d); -fx-background-radius: 30;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Text fill="WHITE" layoutX="6.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comentarios" textAlignment="CENTER" wrappingWidth="94.1207275390625">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <HBox layoutX="523.0" layoutY="553.0" prefHeight="117.0" prefWidth="235.0">
+         <children>
+            <ScrollPane prefHeight="117.0" prefWidth="245.0" style="-fx-background-color: transparent;">
+               <content>
+                  <JFXTextArea fx:id="textAreaComentarios" prefHeight="170.0" prefWidth="452.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="673.0" prefWidth="761.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.controllers.ZonaCreadoController">
+   <children>
+      <ImageView fitHeight="191.0" fitWidth="223.0" layoutX="556.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../resources/kisspng-computer-icons-patriotic-online-marketplace-5b2f6e0c0276c5.8216170515298350200101.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="1.0" prefHeight="78.0" prefWidth="761.0" style="-fx-background-color: linear-gradient(to right top, #09913f, #09915d, #099174, #099186, #098191);" />
+      <TableView fx:id="tablaUsuarios" layoutX="28.0" layoutY="404.0" prefHeight="269.0" prefWidth="203.0" stylesheets="@../../../../Css/fullpackstyling.css">
+         <columns>
+            <TableColumn fx:id="column_NombreUsuario" prefWidth="201.99996948242188" text="              Vendedores Activos" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="nombreVendedor" layoutX="37.0" layoutY="160.0" prefHeight="27.0" prefWidth="203.0" promptText="Nombre Completo" />
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="37.0" layoutY="211.0" onAction="#insertarVendedor" prefHeight="35.0" prefWidth="164.0" style="-fx-background-color: #099186;" text="AÑADIR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Text fill="#434343" layoutX="37.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VENDEDORES" textAlignment="CENTER" wrappingWidth="202.99999102950096">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="btnSaveProduct" buttonType="RAISED" layoutX="315.0" layoutY="348.0" onAction="#insertarProducto" prefHeight="46.0" prefWidth="164.0" style="-fx-background-color: #099186;" text="AGREGAR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <Text fill="#434343" layoutX="295.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRODUCTOS" textAlignment="CENTER" wrappingWidth="202.99999102950096">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <JFXComboBox fx:id="comboVendedor" layoutX="295.0" layoutY="162.0" prefHeight="25.0" prefWidth="203.0" promptText="Vendedor" />
+      <JFXTextField fx:id="nombreProducto" layoutX="295.0" layoutY="221.0" prefHeight="27.0" prefWidth="203.0" promptText="Nombre Producto" />
+      <JFXComboBox fx:id="categoriaProducto" layoutX="295.0" layoutY="283.0" prefHeight="25.0" prefWidth="203.0" promptText="Categoria" />
+   </children>
+</AnchorPane>

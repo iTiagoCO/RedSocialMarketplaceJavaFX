@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="673.0" prefWidth="761.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.controllers.InicioButtonOverview">
+   <children>
+      <Pane layoutX="-6.0" prefHeight="78.0" prefWidth="768.0" style="-fx-background-color: linear-gradient(to right top, #081B60, #065D28, #4E0341, #CD1718, #EA6408);" />
+      <ImageView fitHeight="517.0" fitWidth="819.0" layoutX="-54.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../resources/FondoU.jpeg" />
+         </image>
+      </ImageView>
+      <Text fill="#428311" layoutX="570.0" layoutY="558.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estructuras de datos" />
+      <JFXButton fx:id="creadoRed" layoutX="339.0" layoutY="629.0" onAction="#crearRed" prefHeight="17.0" prefWidth="83.0" style="-fx-background-color: #119c44;" text="Crear red" textFill="WHITE" />
+      <Text fill="#900909" layoutX="435.0" layoutY="558.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Robinson Arias" />
+   </children>
+</AnchorPane>

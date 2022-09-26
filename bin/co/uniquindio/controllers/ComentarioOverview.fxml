@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="349.0" prefWidth="345.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <JFXButton fx:id="btnEnvio" layoutX="14.0" layoutY="298.0" onAction="#sendComment" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: E1E1E1;" text="Enviar" />
+      <JFXTextField fx:id="tfMensaje" layoutX="14.0" layoutY="258.0" prefHeight="25.0" prefWidth="322.0" promptText="Ingrese un comentario..." />
+      <ScrollPane layoutX="14.0" layoutY="7.0" prefHeight="244.0" prefWidth="322.0">
+         <content>
+            <JFXTextArea fx:id="textAreaMensajes" prefHeight="246.0" prefWidth="327.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="108.0" prefWidth="207.0" style="-fx-background-color: transparent;" styleClass="itemProducto" stylesheets="@../../../../Css/fullpackstyling.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.controllers.ProductoController">
+   <children>
+      <Pane layoutX="52.0" layoutY="67.0" prefHeight="32.0" prefWidth="104.0" style="-fx-background-color: linear-gradient(to right top, #2e7075, #2f8c94, #1c818a, #0e7982, #09848f); -fx-background-radius: 30;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fx:id="imagenLike" fitHeight="29.0" fitWidth="29.0" layoutX="23.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../resources/facebook-like.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="numLikes" layoutX="12.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="14.833333987742662">
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="imagenComentarios" fitHeight="32.0" fitWidth="37.0" layoutX="56.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../resources/d3455a22af5f3ed7565fb5fb71bb8d43-send-message-icon-by-vexels.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="7.0" layoutY="3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="64.0" prefWidth="193.0" style="-fx-background-color: linear-gradient(to right top, #1c3d40, #133538, #12464a, #0d5359, #035057);" styleClass="itemProducto">
+         <children>
+            <Label fx:id="nombreProducto" alignment="TOP_LEFT" layoutX="16.0" layoutY="3.0" prefHeight="21.0" prefWidth="170.0" styleClass="text" text="   Name: " textFill="#f5f2f2">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="categoriaProducto" layoutX="16.0" layoutY="21.0" prefHeight="19.0" prefWidth="175.0" text="   Categoria:" textFill="#f5f2f2">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="fechaProducto" layoutX="16.0" layoutY="32.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="181.0" text="   Fecha:" textFill="#f5f2f2">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="vendedorLabel" layoutX="17.0" layoutY="46.0" prefHeight="15.0" prefWidth="161.0" text="Vendedor:" textFill="#f5f2f2">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

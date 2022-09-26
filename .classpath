@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="lib" path="Jars/AnimateFX-1.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="Jars/jfoenix-8.0.10.jar"/>
+	<classpathentry exported="true" kind="lib" path="Jars/animation-1.4.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="Jars/jasperreports-fonts-6.17.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="Jars/jgoodies-common-1.6.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="Jars/TrayTester.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jre1.8.0_301/lib/charsets.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jre1.8.0_301/lib/deploy.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jre1.8.0_301/lib/javaws.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jre1.8.0_301/lib/jce.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jre1.8.0_301/lib/jfr.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jre1.8.0_301/lib/jfxswt.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jre1.8.0_301/lib/jsse.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jre1.8.0_301/lib/management-agent.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jre1.8.0_301/lib/plugin.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jre1.8.0_301/lib/resources.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jre1.8.0_301/lib/rt.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
