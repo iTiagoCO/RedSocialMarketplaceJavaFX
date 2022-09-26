@@ -1,4 +1,4 @@
- 
+ ![enter image description here](https://i.ibb.co/y4bNBNT/image.png)
 # Red Social Marketplace JavaFX
 
 Esta red consiste en que cada vendedor tiene una serie de productos a vender los cuales solo puede negociar con vendedores aliados (un vendedor aliado es aquel que pertenece a su red, esta pertenencia es bidireccional, es decir si el vendedor A tiene en su red al vendedor B entonces el B también tiene al vendedor A en su red)
